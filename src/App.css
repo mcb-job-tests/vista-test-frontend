@@ -1,28 +1,168 @@
+:root {
+    --main-text-color: #002e6b;
+    --aqua-vista-dark: #5dd5bf;
+    --aqua-vista-shaded: #86e0d0;
+    --aqua-vista-light: #9ae7d9;
+    --blue-vista-dark: #002e6b;
+    --gray-vista-light: #f2f2f2;
+    --gray-vista-dark: #ccd5e1;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    text-align: center;
+    height:100vh;
+    width: 100vw;
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.parent-content {
+    background-color: var(--aqua-vista-light);
+    height:100vh;
+    width: 100vw;
+}
+
+.parent-container {
+    padding: 48px;
+}
+
+.recommended-roles-parent {
+    background-color: var(--blue-vista-dark);
+}
+
+.question-card {
+    background-color: var(--aqua-vista-shaded);
+    border: 1px solid white;
+    min-height: 460px;
+    border-radius: 6px;
+}
+
+.roles-card {
+    background-color: var(--blue-vista-dark);
+    min-height: 460px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.question-title, .how-it-works-title {
+    color: var(--blue-vista-dark);
+    border-bottom: 2px solid white;
+    display: inline;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    font-family: tradeGothicNextLTPro-Bd;
+}
+
+.question-text {
+    padding-left: 8px;
+    padding-right: 8px;
+    color: var(--blue-vista-dark);
+    font-family: tradeGothicNextLTPro-Rg;
+}
+
+.roles-help-text {
+    padding-left: 4px;
+    padding-right: 4px;
+    color: white;
+    font-family: tradeGothicNextLTPro-Lt;
+}
+
+.role-text{
+    font-size: 90%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: var(--main-text-color);
+    font-family: tradeGothicNextLTPro-Lt;
+}
+
+.create-job-alert-text {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 1px;
+    font-size: 1em;
+    font-family: tradeGothicNextLTPro-Lt;
+}
+
+.roles-title {
+    color: white;
+    border-bottom: 2px solid white;
+    display: inline;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: tradeGothicNextLTPro-Bd;
+}
+
+.question-title-box, .roles-title-box {
+    padding-top: 16px;
+}
+
+.how-it-works-body {
+    color: var(--main-text-color);
+    font-family: tradeGothicNextLTPro-Lt;
+}
+
+.answer-box {
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    font-family: tradeGothicNextLTPro-Rg;
+}
+
+.down-arrow-selector-box {
+    min-height: 50px;
+    background-color: #5dd5bf;
+}
+
+.up-arrow-selector-box {
+    min-height: 50px;
+    background-color: #5dd5bf;
+}
+
+.answer-button {
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+.role-selection-button {
+    color: mediumvioletred;
+    border-radius: 16px;
+}
+
+.career-calculator-title, .answer-text, .recommended-roles-text {
+    color: var(--blue-vista-dark);
+}
+
+.inverted-image {
+    filter: invert(100%);
+}
+
+.close-button-container {
+    align-items: center;
+    display: inline-flex;
+    vertical-align: middle
+}
+
+@font-face {
+    font-family: tradeGothicNextLTPro-Rg;
+    src: url(fonts/linotype_trade_gothic_next_lt_pro_rg.otf);
+}
+
+@font-face {
+    font-family: tradeGothicNextLTPro-Bd;
+    src: url(fonts/linotype_trade_gothic_next_lt_pro_bd.otf);
+}
+
+@font-face {
+    font-family: tradeGothicNextLTPro-Lt;
+    src: url(fonts/linotype_trade_gothic_next_lt_pro_lt.otf);
 }
